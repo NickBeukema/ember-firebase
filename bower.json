@@ -1,0 +1,6 @@
+{
+  "name": "first-app",
+  "dependencies": {
+    "firebase": "^3.0.0"
+  }
+}
