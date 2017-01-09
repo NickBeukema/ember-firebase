@@ -1,0 +1,24 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  {{link-to 'Star Teacher' 'dashboard' classNames='navbar-brand'}}
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        {{link-to 'Page 1' 'dashboard' classNames='nav-link'}}
+      </li>
+    </ul>
+    <span class="navbar-text">
+      {{#if isSignedIn }}
+        {{currentUser.username}} (<a href="#" {{action 'signOut'}}>Logout</a>)
+      {{else}}
+        <a href="#" {{action 'signIn'}}>Login</a>
+      {{/if}}
+    </span>
+  </div>
+
+</nav>

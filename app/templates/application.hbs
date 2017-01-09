@@ -1,8 +1,3 @@
-<h1>Star Teacher</h1>
-{{#if session.isAuthenticated}}
-  Logged in as {{session.currentUser.email}}
-  <button {{action "signOut"}}>Sign out</button>
-  {{outlet}}
-{{else}}
-  <button {{action "signIn" "google"}}>Sign in with Google</button>
-{{/if}}
+<div class="container">
+  {{ nav-bar }}
+</div>
