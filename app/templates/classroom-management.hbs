@@ -1,0 +1,32 @@
+<div class="header row">
+  <div class="col-md-9">
+    <h2>Classroom Management</h2>
+  </div>
+  <div class="col-md-3">
+    <button {{action 'newClassroom'}} type="button" class="btn btn-primary header__button">New Classroom</button>
+
+  </div>
+</div>
+
+{{#if hasClassrooms}}
+
+  <table class="table table-sm">
+    <thead>
+      <th>one</th>
+      <th>two</th>
+      <th>three</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+      </tr>
+    </tbody>
+  </table>
+
+{{else}}
+<div class="alert alert-warning" role="alert">
+  <strong>No classrooms available</strong> Click 'New Classroom' above to create your first classroom.
+</div>
+{{/if}}

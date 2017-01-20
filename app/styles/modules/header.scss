@@ -1,0 +1,13 @@
+.header {
+  margin-bottom: 25px;
+}
+
+.header__button {
+  float: right;
+
+  @media (max-width: 767px) {
+    margin-top: 5px;
+    float: none;
+  }
+}
+

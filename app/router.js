@@ -8,6 +8,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('dashboard');
+  this.route('classroom-management');
+  this.route('classroom', { path: '/classrooms/:classroom_id'} , function(){
+    this.route('edit');
+  });
 });
 
 export default Router;
