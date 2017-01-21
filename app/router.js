@@ -9,8 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('dashboard');
   this.route('classroom-management');
-  this.route('classroom', { path: '/classrooms/:classroom_id'} , function(){
-    this.route('edit');
+  this.route('classroom', { path: '/classrooms/'}, function(){
+    this.route('edit', { path: '/:classroom_id/edit'});
   });
 });
 

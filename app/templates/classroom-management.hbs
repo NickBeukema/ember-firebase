@@ -12,16 +12,17 @@
 
   <table class="table table-sm">
     <thead>
-      <th>one</th>
-      <th>two</th>
-      <th>three</th>
+      <th>Title</th>
+      <th colspan="2">Student Count</th>
     </thead>
     <tbody>
-      <tr>
-        <td>one</td>
-        <td>two</td>
-        <td>three</td>
-      </tr>
+      {{#each classrooms as |classroom|}}
+        <tr>
+          <td>{{classroom.title}}</td>
+          <td>{{classroom.students.length}}</td>
+          <td><button {{ action 'editClassroom' classroom }} class="btn btn-success">Edit</button></td>
+        </tr>
+      {{/each}}
     </tbody>
   </table>
 
