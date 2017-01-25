@@ -31,3 +31,8 @@
   <strong>No classrooms available</strong> Click 'New Classroom' above to create your first classroom.
 </div>
 {{/if}}
+
+{{#if creatingNewClassroom }}
+  {{ new-classroom-modal
+  closeAction=(action "closeNewClassroomModal") }}
+{{/if}}

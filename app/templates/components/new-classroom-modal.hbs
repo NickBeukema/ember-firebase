@@ -1,0 +1,8 @@
+  {{#modal-dialog close=attrs.closeAction
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+      <p>What would you like to call this classroom?</p>
+      {{input value=classroomName }}
+      <br/>
+      <button {{action "confirmClassroomCreation"}}>Create Classroom</button>
+  {{/modal-dialog}}

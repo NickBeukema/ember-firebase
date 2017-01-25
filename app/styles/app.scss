@@ -1,4 +1,7 @@
 @import 'bootstrap';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
 @import 'modules/global';
 @import 'modules/layout';
 @import 'modules/header';
