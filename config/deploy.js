@@ -18,8 +18,19 @@ module.exports = function(deployTarget) {
       username: "www",
       host: "192.168.88.187",
       releasesPath: "/home/www/releases",
-      releasesPath: "/var/www/html/myapp"
-    }
+    },
+
+    //'with-rsync': {
+      //username: "www",
+      //host: "192.168.88.187",
+      //privateKeyPath: '~/.ssh/id_rsa', // optional
+      //passphrase: "ftmhbn8e",
+      //port: 22, // optional
+      //root: "/var/www/html/myapp"
+    //}
+
+
+
   };
 
   return ENV;
